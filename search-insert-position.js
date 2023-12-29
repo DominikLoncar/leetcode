@@ -2,7 +2,7 @@ const searchInsert = function(nums, target) {
     
     let targetPosition = nums.length;
 
-    if(target < nums[0])
+    if(target <= nums[0])
     {
         return 0;
     }
