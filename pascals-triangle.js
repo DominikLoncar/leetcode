@@ -19,7 +19,11 @@ const pascalsTriangle = (numRows) => {
         }
     }
 
-    return resultArr[numRows-1];
+    resultArr = resultArr.map(column => {
+        return column.filter(el => el)
+    })
+
+    return resultArr;
 };
 
 console.log(pascalsTriangle(5));
